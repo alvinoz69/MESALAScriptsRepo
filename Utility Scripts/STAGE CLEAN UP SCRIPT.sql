@@ -1,0 +1,2 @@
+USE CBDB_STAGE
+EXEC [sp_MSforeachtable] "TRUNCATE TABLE ?"

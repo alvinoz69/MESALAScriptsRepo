@@ -1,0 +1,76 @@
+USE [CBDB_STAGE]
+GO
+
+INSERT INTO [CMN].[BANK_SUNDRY]
+           ([HEADER_ID]
+           ,[BANK_CODE]
+           ,[BANK_NAME]
+           ,[BANK_SHORT_NAME]
+           ,[BANK_NAME_REPORTS]
+           ,[PREVIOUS_BUSINESS_DATE]
+           ,[CURRENT_BUSINESS_DATE]
+           ,[NEXT_BUSINESS_DATE]
+           ,[MAX_BACK_DATE_DAYS]
+           ,[ASSETS_PREFIX]
+           ,[LIABILITIES_PREFIX]
+           ,[CAPITAL_PREFIX]
+           ,[CONTIGENT_PREFIX]
+           ,[INCOME_PREFIX]
+           ,[EXPENSES_PREFIX]
+           ,[PROVISIONS_PREFIX]
+           ,[DAILY_PROCESSING_FLAG]
+           ,[WEEKLY_PROCESSING_FLAG]
+           ,[MONTHLY_PROCESSING_FLAG]
+           ,[QUARTERLY_PROCESSING_FLAG]
+           ,[SEMESTRAL_PROCESSING_FLAG]
+           ,[YEARLY_PROCESSING_FLAG]
+           ,[BACK_DATE_DATE]
+           ,[CURRENCY_CODE]
+           ,[CURRENCY_THOUSANDS_SEPARATOR]
+           ,[CURRENCY_DECIMAL_SEPARATOR]
+           ,[DATE_FORMAT]
+           ,[INTER_GL_ACCOUNT_NO]
+           ,[CLOSE_GL_ACCOUNT_NO]
+           ,[HOST_STATUS]
+           ,[UPDATE_TYPE]
+           ,[LAST_UPDATED_BY]
+           ,[LAST_UPDATED_DATE]
+           ,[STATUS])
+     VALUES
+           (1
+           ,123
+           ,'MESALA'
+           ,'MSL'
+           ,'MSL-RPT'
+           ,'2019-10-14'
+           ,'2019-10-15'
+           ,'2019-10-16'
+           ,'2'
+           ,'A'
+           ,'L'
+           ,'C'
+           ,'T'
+           ,'I'
+           ,'X'
+           ,'P'
+           ,1
+           ,1
+           ,1
+           ,1
+           ,1
+           ,1
+           ,'2019-10-11'
+           ,'PHP'
+           ,','
+           ,'.'
+           ,'YYYY-MM-DD'
+           ,'123456789'
+           ,'987654321'
+           ,2
+           ,'O'
+           ,'ALVIN PIORNATO'
+           ,'2019-10-15'
+           ,4)
+GO
+
+
