@@ -1,0 +1,54 @@
+DROP TABLE IF EXISTS CBDB_REPORTS.[RPT].[LMS_HISTORY_CONSOLIDATED]
+
+/****** Object:  Table [RPT].[LMS_HISTORY_CONSOLIDATED]    Script Date: 10/12/2019 10:44:13 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE CBDB_REPORTS.[RPT].[LMS_HISTORY_CONSOLIDATED](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[ACCOUNT_NO] [nvarchar](50) NULL, 
+	[TRAN_CODE] [nvarchar](50) NULL,
+	[SEQUENCENO] [bigint] NULL,
+	[BRANCH_CODE] [nvarchar](50) NULL,
+	[BUSINESS_DATE] [datetime] NULL,
+	[USER_NAME] [nvarchar](50) NULL,
+	[MNEMONIC] [nvarchar](100) NULL,
+	[MEMBER_NO] [nvarchar](50) NULL,
+	[PRODUCT_CODE] [nvarchar](3) NULL,
+	[ACCOUNT_STATUS_CODE] [nvarchar](50) NULL,
+	[IS_REVERSAL] [int] NULL,
+	[AR_NO] [nvarchar](50) NULL,
+	[OR_NO] [nvarchar](50) NULL,
+	[OR_AR_DATE] [date] NULL,
+	[TRAN_CODE_DESCRIPTION] [nvarchar](100) NULL,
+	[AIR] [decimal](18, 2) NULL,
+	[PRINCIPAL] [decimal](18, 2) NULL,
+	[INTEREST] [decimal](18, 2) NULL,
+	[PENALTY] [decimal](18, 2) NULL,
+	[AP] [decimal](18, 2) NULL,
+	[AR] [decimal](18, 2) NULL,
+	[COLLECTION_AGENT_FEE] [decimal](18, 2) NULL,
+	[CCA] [decimal](18, 2) NULL,
+	[SD] [decimal](18, 2) NULL,
+	[CRI] [decimal](18, 2) NULL,
+	[PREV_LOAN] [decimal](18, 2) NULL,
+	[DST] [decimal](18, 2) NULL,
+	[TRAN_TOTAL] [decimal](38, 2) NULL,
+	[TRAN_TYPE] [nvarchar](100) NULL,
+	[PRINCIPAL_BALANCE] [decimal](18, 2) NULL,
+	[INTEREST_BALANCE] [decimal](18, 2) NULL,
+	[OUTSTANDING_BALANCE] [decimal](18, 2) NULL,
+	[AIR_BALANCE] [decimal](18, 2) NULL,
+	[DEPOSIT_ACCOUNT_NO] [nvarchar](150) NULL,
+	[HOST_ID] [bigint] NULL,
+ CONSTRAINT [PK_LMS_HISTORY_CONSOLIDATED] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

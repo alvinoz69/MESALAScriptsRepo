@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS CBDB_REPORTS.LMS.REMITTANCE
+
+/****** Object:  Table [LMS].[REMITTANCE]    Script Date: 03/12/2019 1:42:27 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE CBDB_REPORTS.LMS.REMITTANCE(
+	[ID] [bigint] NOT NULL IDENTITY(1,1),
+	[HEADER_ID] [bigint] NOT NULL,
+	[ACCOUNT_NO] [varchar](20) NULL,
+	[COMP_CODE] [varchar](20) NULL,
+	[COMP_NAME] [nvarchar](50) NULL,
+	[REMITTANCE_TYPE] [nvarchar](50) NULL,
+	[AMOUNT] [decimal](18, 2) NULL,
+	[DATE] [date] NULL,
+	[OR_NO] [varchar](20) NULL,
+	[UNPOSTED_REASON] [varchar](200) NULL,
+	[PAYROLL_DATE] [date] NULL
+) ON [PRIMARY]
+GO
+
+

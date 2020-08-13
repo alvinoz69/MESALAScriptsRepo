@@ -1,0 +1,35 @@
+DROP TABLE IF EXISTS CBDB_REPORTS.CMN.BILLING
+
+/****** Object:  Table [CMN].[BILLING]    Script Date: 18/12/2019 10:51:58 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE CBDB_REPORTS.CMN.BILLING(
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[HEADER_ID] [bigint] NOT NULL,
+	[BILLING_GROUP] [varchar](10) NULL,
+	[BILLING_GROUP_NAME] [nvarchar](200) NULL,
+	[MAN_NO] [varchar](20) NULL,
+	[COMP_CODE] [varchar](20) NULL,
+	[COMP_NAME] [nvarchar](250) NULL,
+	[LAST_NAME] [nvarchar](200) NULL,
+	[FIRST_NAME] [nvarchar](200) NULL,
+	[MIDDLE_NAME] [nvarchar](200) NULL,
+	[EXTN_NAME] [nvarchar](200) NULL,
+	[ACCOUNT_NO] [varchar](20) NULL,
+	[MONTHLY_AMORT] [decimal](18, 2) NULL,
+	[INSTALLMENT_INTEREST] [decimal](18, 2) NULL,
+	[INSTALLMENT_PRINCIPAL] [decimal](18, 2) NULL,
+	[CIF_NO] [varchar](20) NULL,
+	[IS_BILL_GENERATED] [int] NULL,
+	[LAST_UPDATED_DATE] [date] NULL,
+	[TRANSFERRED_TO_CO_MAKER] [bit] NULL,
+	[ORIGINAL_BORROWER] [nvarchar](350) NULL,
+	[BILL_AMOUNT] [decimal](18, 2) NULL
+) ON [PRIMARY]
+GO
+
+

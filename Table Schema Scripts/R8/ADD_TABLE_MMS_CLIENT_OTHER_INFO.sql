@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS [MMS].[CLIENT_OTHER_INFO]
+
+/****** Object:  Table [MMS].[CLIENT_OTHR_BANK_ACCOUNT]    Script Date: 11/11/2019 11:03:03 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [MMS].[CLIENT_OTHER_INFO](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[HEADER_ID] [bigint] NOT NULL,
+	[MEMBER_NO] [nvarchar](15) NOT NULL,
+	[BANK_CODE] [nvarchar](3) NULL,
+	[BANK_NAME] [varchar](max) NULL,
+	[BANK_SHORT_NAME] [varchar](100) NULL,
+	[ACCOUNT_NO] [nvarchar](20) NULL,
+	[ACCOUNT_TYPE] [nvarchar](3) NULL,
+	[ACCOUNT_NAME] [nvarchar](60) NULL,
+	[STATUS] [varchar](3) NOT NULL)
+GO
+
+
